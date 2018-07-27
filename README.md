@@ -10,9 +10,9 @@ npm i nativehashmap
 ## Sample Usage
 
 ```
-var hashmap=require("nativehashmapnative");
+var hashmap=require("nativehashmap");
 hashmap.add("key", "value");
-hashmap.get("key")
+console.log(hashmap.get("key"));
 ```
 
 ## Metrics

@@ -1,6 +1,6 @@
 {
   "name": "nativehashmap",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "anon767",
     "url": "https://github.com/anon767"
@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": "git://github.com/anon767/hashmapnode",
   "bugs": "https://github.com/anon767/hashmapnode/issues",
-  "description": "A simple but fast local Hashmap",
+  "description": "A simple but fast native Hashmap implementation",
   "main": "index.js",
   "engines": {
     "node": "9.x.x"

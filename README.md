@@ -5,9 +5,8 @@ Simple but fast Hashmap for NodeJS. Implemented in C++.
 ## Install
 
 ```
-npm i hashmapnative
+npm i nativehashmap
 ```
-
 ## Sample Usage
 
 ```

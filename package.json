@@ -1,0 +1,24 @@
+{
+  "name": "hashmap",
+  "version": "0.1.0",
+  "author": "Tom",
+  "description": "A simple but fast local Hashmap",
+  "main": "index.js",
+  "engines": {
+    "node": "9.x.x"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "addon",
+    "hashmap",
+    "native",
+    "cpp"
+  ]
+}

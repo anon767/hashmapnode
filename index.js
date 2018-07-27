@@ -1,13 +1,13 @@
 'use strict';
-var kvs = null;
+var nativehashmap = null;
 if (process.platform === "win32" && process.arch === "x64") {
-    kvs = null;
+    nativehashmap = null;
     console.exception("Key Value Store only Linux compatible");
 } else if (process.platform === "win32" && process.arch === "ia32") {
-    kvs = null;
+    nativehashmap = null;
     console.exception("Key Value Store only Linux compatible");
 } else {
-    kvs = require('./build/Release/keyvaluestore');
+    nativehashmap = require('./build/Release/keyvaluestore');
 }
 
-module.exports = kvs;
+module.exports = nativehashmap;

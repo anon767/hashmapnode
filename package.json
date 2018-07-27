@@ -1,16 +1,14 @@
 {
-  "name": "hashmap",
+  "name": "nativehashmap",
   "version": "0.1.0",
-  "author": "Tom",
+  "author": "anon767",
   "description": "A simple but fast local Hashmap",
   "main": "index.js",
   "engines": {
     "node": "9.x.x"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "node test/test.js"
   },

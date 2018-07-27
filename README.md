@@ -2,10 +2,16 @@
   
 Simple but fast Hashmap for NodeJS. Implemented in C++.
 
+## Install
+
+```
+npm i hashmapnative
+```
+
 ## Sample Usage
 
 ```
-var hashmap=require("hashmap");
+var hashmap=require("nativehashmapnative");
 hashmap.add("key", "value");
 hashmap.get("key")
 ```

@@ -1,7 +1,13 @@
 {
   "name": "nativehashmap",
   "version": "0.1.1",
-  "author": "anon767",
+  "author": {
+    "name": "anon767",
+    "url": "https://github.com/anon767"
+  },
+  "license": "MIT",
+  "repository": "git://github.com/anon767/hashmapnode",
+  "bugs": "https://github.com/anon767/hashmapnode/issues",
   "description": "A simple but fast local Hashmap",
   "main": "index.js",
   "engines": {
@@ -12,11 +18,12 @@
   "scripts": {
     "test": "node test/test.js"
   },
-  "repository": "",
   "keywords": [
     "addon",
     "hashmap",
     "native",
-    "cpp"
+    "cpp",
+    "object",
+    "map"
   ]
 }

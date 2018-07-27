@@ -9,7 +9,7 @@ npm i nativehashmap
 ```
 ## Sample Usage
 
-```
+```javascript
 var hashmap=require("nativehashmap");
 hashmap.add("key", "value");
 console.log(hashmap.get("key"));
@@ -17,7 +17,7 @@ console.log(hashmap.get("key"));
 
 Its possible to store JSON objects like:
 
-```
+```javascript
 addon.add("object", JSON.stringify({o:"test"}));
 console.log(JSON.parse(addon.get("object")).o === "test");
 ```

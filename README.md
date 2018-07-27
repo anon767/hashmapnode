@@ -27,3 +27,5 @@ console.log(JSON.parse(addon.get("object")).o === "test");
 
 1. writing is about 2x faster
 2. reading is 15% faster
+
+than ordinary array usage or other hashmap libraries

@@ -25,15 +25,20 @@ for (let i = 0; i < 1000000; i++) {
 }
 console.timeEnd('getJS');
 
-console.log("overwite");
+console.log("two adds with same key should overwrite");
 {
     addon.add("test", "a");
     addon.add("test", "b");
     console.assert(addon.get("test") === "b", "Should overwrite to b");
 }
 
-console.log("empty");
+console.log("No Entry should return empty string");
 {
-
     console.assert(addon.get("fdghdfghdfghdfgh").length < 2, "If nothing found should be empty");
+}
+
+console.log("json coded objects should be stored");
+{
+    addon.add("object", JSON.stringify({o:"test"}));
+    console.assert(JSON.parse(addon.get("object")).o === "test", "Object should be accessible");
 }

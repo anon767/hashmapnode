@@ -1,6 +1,6 @@
 {
   "name": "nativehashmap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "anon767",
   "description": "A simple but fast local Hashmap",
   "main": "index.js",

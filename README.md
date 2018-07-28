@@ -3,8 +3,16 @@
 Simple but fast Hashmap for NodeJS. Implemented in C++.
 
 ## Install
-due to the implementation in C++, a C++-Compiler is required and on certain OS libuv.
-
+due to the implementation in C++, a C++-Compiler is required and on certain OS libuv and libboost.
+on Debian/Ubuntu install the c++ boost library with following command:
+```
+sudo apt-get install libboost-all-dev
+```
+On Archlinux you can do:
+```
+sudo pacman -Syu boost
+```
+And then:
 
 ```
 npm i nativehashmap

@@ -24,7 +24,7 @@ const addon = require("../index.js");
 }
 {
     addon.getAsync("object", function (blubb) {
-        console.log("called", blubb);
         console.assert(value === "test", "Async did not behave as expected");
+        console.log("Async fetch works - ✓")
     });
 }

@@ -36,7 +36,7 @@ void DoAsync(uv_work_t *r) {
     req->output = kvs->get(req->input);
 }
 
-void AfterAsync(uv_work_t *r) {
+void AfterAsync(uv_work_t *r, int ignored) {
     async_req *req = reinterpret_cast<async_req *>(r->data);
     v8::Isolate *isolate = req->isolate;
     v8::HandleScope scope(isolate);

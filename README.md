@@ -28,7 +28,7 @@ Also you can fetch values Async
 
 ```javascript
 addon.add("object", JSON.stringify({o:"test"}));
-addon.get("object",function(value){
+addon.getAsync("object",function(value){
    console.log(JSON.parse(value).o === "test"); 
 });
 ```

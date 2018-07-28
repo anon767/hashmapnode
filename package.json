@@ -1,6 +1,6 @@
 {
   "name": "nativehashmap",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": {
     "name": "anon767",
     "url": "https://github.com/anon767"
@@ -24,6 +24,15 @@
     "native",
     "cpp",
     "object",
-    "map"
+    "c++",
+    "native",
+    "fast",
+    "map",
+    "object",
+    "array",
+    "associative",
+    "javascript",
+    "nodejs",
+    "node"
   ]
 }

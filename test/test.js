@@ -1,44 +1,24 @@
 'use strict';
 
 const addon = require("../index.js");
-let test1 = [];
 
 
-console.time('addCpp');
-for (let i = 0; i < 1000000; i++) {
-    addon.add("test" + i, "dsfgsdfg " + i);
-}
-console.timeEnd('addCpp');
-console.time('addJS');
-for (let i = 0; i < 1000000; i++) {
-    test1["test" + i] = "dsfgsdfg " + i;
-}
-console.timeEnd('addJS');
-console.time('getCpp');
-for (let i = 0; i < 1000000; i++) {
-    let b = addon.get("test" + i)
-}
-console.timeEnd('getCpp');
-console.time('getJS');
-for (let i = 0; i < 1000000; i++) {
-    let b = test1["test" + i]
-}
-console.timeEnd('getJS');
-
-console.log("two adds with same key should overwrite");
 {
     addon.add("test", "a");
     addon.add("test", "b");
     console.assert(addon.get("test") === "b", "Should overwrite to b");
+    console.log("Overwriting works - ✓");
 }
 
-console.log("No Entry should return empty string");
+
 {
-    console.assert(addon.get("fdghdfghdfghdfgh").length < 2, "If nothing found should be empty");
+    console.assert(addon.get("fdghdfghdfghdfgh").length < 2, "return should be empty");
+    console.log("Empty Return works - ✓")
 }
 
-console.log("json coded objects should be stored");
+
 {
-    addon.add("object", JSON.stringify({o:"test"}));
-    console.assert(JSON.parse(addon.get("object")).o === "test", "Object should be accessible");
+    addon.add("object", JSON.stringify({o: "test"}));
+    console.assert(JSON.parse(addon.get("object")).o === "test", "Object is not accessible");
+    console.log("JSON Object Accessibility works - ✓")
 }

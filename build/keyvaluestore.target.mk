@@ -32,16 +32,16 @@ CFLAGS_C_Debug :=
 CFLAGS_CC_Debug := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++0x
+	-std=gnu++1y
 
 INCS_Debug := \
-	-I/home/tg/.node-gyp/9.11.2/include/node \
-	-I/home/tg/.node-gyp/9.11.2/src \
-	-I/home/tg/.node-gyp/9.11.2/deps/openssl/config \
-	-I/home/tg/.node-gyp/9.11.2/deps/openssl/openssl/include \
-	-I/home/tg/.node-gyp/9.11.2/deps/uv/include \
-	-I/home/tg/.node-gyp/9.11.2/deps/zlib \
-	-I/home/tg/.node-gyp/9.11.2/deps/v8/include
+	-I/home/tom/.node-gyp/10.7.0/include/node \
+	-I/home/tom/.node-gyp/10.7.0/src \
+	-I/home/tom/.node-gyp/10.7.0/deps/openssl/config \
+	-I/home/tom/.node-gyp/10.7.0/deps/openssl/openssl/include \
+	-I/home/tom/.node-gyp/10.7.0/deps/uv/include \
+	-I/home/tom/.node-gyp/10.7.0/deps/zlib \
+	-I/home/tom/.node-gyp/10.7.0/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=keyvaluestore' \
@@ -70,20 +70,20 @@ CFLAGS_C_Release :=
 CFLAGS_CC_Release := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++0x
+	-std=gnu++1y
 
 INCS_Release := \
-	-I/home/tg/.node-gyp/9.11.2/include/node \
-	-I/home/tg/.node-gyp/9.11.2/src \
-	-I/home/tg/.node-gyp/9.11.2/deps/openssl/config \
-	-I/home/tg/.node-gyp/9.11.2/deps/openssl/openssl/include \
-	-I/home/tg/.node-gyp/9.11.2/deps/uv/include \
-	-I/home/tg/.node-gyp/9.11.2/deps/zlib \
-	-I/home/tg/.node-gyp/9.11.2/deps/v8/include
+	-I/home/tom/.node-gyp/10.7.0/include/node \
+	-I/home/tom/.node-gyp/10.7.0/src \
+	-I/home/tom/.node-gyp/10.7.0/deps/openssl/config \
+	-I/home/tom/.node-gyp/10.7.0/deps/openssl/openssl/include \
+	-I/home/tom/.node-gyp/10.7.0/deps/uv/include \
+	-I/home/tom/.node-gyp/10.7.0/deps/zlib \
+	-I/home/tom/.node-gyp/10.7.0/deps/v8/include
 
 OBJS := \
-	$(obj).target/$(TARGET)/KeyValueStoreImpl.o \
-	$(obj).target/$(TARGET)/Binding.o
+	$(obj).target/$(TARGET)/src/KeyValueStoreImpl.o \
+	$(obj).target/$(TARGET)/src/Binding.o
 
 # Add to the list of files we specially track dependencies for.
 all_deps += $(OBJS)

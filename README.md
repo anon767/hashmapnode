@@ -3,6 +3,8 @@
 Simple but fast Hashmap for NodeJS. Implemented in C++.
 
 ## Install
+due to the implementation in C++, a C++-Compiler is required and on certain OS libuv.
+
 
 ```
 npm i nativehashmap

@@ -19,6 +19,12 @@ for (let i = 0; i < 1000000; i++) {
     let b = addon.get("test" + i)
 }
 console.timeEnd('getCpp');
+console.time('getAsyncCpp');
+for (let i = 0; i < 1000000; i++) {
+    let b = addon.getAsync("test" + i, function (value) {
+    })
+}
+console.timeEnd('getAsyncCpp');
 console.time('getJS');
 for (let i = 0; i < 1000000; i++) {
     let b = test1["test" + i]

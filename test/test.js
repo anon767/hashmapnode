@@ -22,3 +22,9 @@ const addon = require("../index.js");
     console.assert(JSON.parse(addon.get("object")).o === "test", "Object is not accessible");
     console.log("JSON Object Accessibility works - ✓")
 }
+{
+    addon.getAsync("object", function (blubb) {
+        console.log("called", blubb);
+        console.assert(value === "test", "Async did not behave as expected");
+    });
+}

@@ -24,6 +24,16 @@ addon.add("object", JSON.stringify({o:"test"}));
 console.log(JSON.parse(addon.get("object")).o === "test");
 ```
 
+Also you can fetch values Async
+
+```javascript
+addon.add("object", JSON.stringify({o:"test"}));
+addon.get("object",function(value){
+   console.log(JSON.parse(value).o === "test"); 
+});
+```
+
+Check out the Tests and Benchmarks for further examples
 
 ## Metrics
 
